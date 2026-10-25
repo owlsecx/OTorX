@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-OTorX — OwlSec security tool
+
+OTorX is a Tor and onion-network reconnaissance and auditing suite that routes traffic through the Tor SOCKS proxy for anonymized assessment. It checks Tor connectivity, fetches and analyses .onion services, verifies circuit isolation and inspects exit-node behaviour. It is intended strictly for authorized research on services you own or are permitted to test.
 
 ---
 
 ## ✨ Features
 
-- OTorX — OwlSec security tool
+
+- Tor connectivity and SOCKS-proxy verification before any task runs
+- Onion-service fetching and metadata analysis
+- Circuit-isolation checks and new-identity (NEWNYM) control
+- Exit-node inspection and anonymity validation
+- Timeout and retry handling tuned for high-latency Tor circuits
+- Offline --self-test for safe verification without a live Tor daemon
 
 ---
 
@@ -37,8 +44,11 @@ OTorX — OwlSec security tool
 
 ## 🚀 Usage
 
+
 ```bash
 ./OTorX
+./OTorX --self-test
+./OTorX --help
 ```
 
 ---
